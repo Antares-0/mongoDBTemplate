@@ -20,13 +20,13 @@ public class CommentServiceTest {
 
 
     @Test
-    public void testFindCommentList(){
+    public void testFindCommentList() {
         System.out.println(commentService.findCommentList());
     }
 
     @Test
-    public void testSaveComment(){
-        Comment comment=new Comment();
+    public void testSaveComment() {
+        Comment comment = new Comment();
         comment.setArticleid("100000");
         comment.setContent("测试添加的数据");
         comment.setCreatedatetime(LocalDateTime.now());
@@ -39,13 +39,13 @@ public class CommentServiceTest {
     }
 
     @Test
-    public void testFindCommentListByParentid(){
+    public void testFindCommentListByParentid() {
         System.out.println(commentService.findCommentListByParentid("3", 1, 2));
     }
 
 
     @Test
-    public void testUpdateCommentLikenum(){
+    public void testUpdateCommentLikenum() {
         System.err.println("-----");
         commentService.updateCommentLikenum("2");
     }

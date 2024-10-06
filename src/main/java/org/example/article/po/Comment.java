@@ -19,7 +19,7 @@ import java.util.Date;
 // 若添加 @Document ，则 save 到 comment collection
 @Document(collection = "comment")//可以省略，如果省略，则默认使用类名小写映射集合
 // 复合索引
-@CompoundIndex( def = "{'userid': 1, 'nickname': -1}")
+@CompoundIndex(def = "{'userid': 1, 'nickname': -1}")
 public class Comment implements Serializable {
     //主键标识，该属性的值会自动对应mongodb的主键字段"_id"，如果该属性名就叫“id”,则该注解可以省略，否则必须写
     @Id
