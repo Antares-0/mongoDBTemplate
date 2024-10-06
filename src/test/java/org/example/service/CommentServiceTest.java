@@ -48,7 +48,6 @@ public class CommentServiceTest {
     public void testUpdateCommentLikenum(){
         System.err.println("-----");
         commentService.updateCommentLikenum("2");
-        System.err.println("-----");
     }
 
 }
